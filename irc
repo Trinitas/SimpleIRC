@@ -12,7 +12,7 @@ client.setEncoding('utf-8');
 
 client.addListener('connect', function () {
 	console.log("connecting...");
-	client.write('NICK '+nick+'\r\n', 'binary');
+	client.write('NICK '+nick+'\r\n', 'binary'); //Binary for nick multi language support
 	client.write('USER ' + user + ' 0 * :' + user + '\r\n');
 });
 
