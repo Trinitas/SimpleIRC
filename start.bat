@@ -1,0 +1,2 @@
+node irc.js
+pause
